@@ -25,10 +25,11 @@
     },
     "scripts": {
         "tsc": "tsc -p .",
-        "clean": "rm -rf lib",
+        "clean": "rmdir /s lib",
         "start": "node lib/index.js",
         "docs": "docsify serve docs",
-        "build": "npm run clean && tsc -p .",
+        "prebuild": "rmdir /s lib",
+        "build": "tsc -p .",
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
