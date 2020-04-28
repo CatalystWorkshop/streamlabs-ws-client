@@ -1,4 +1,4 @@
-import * as EventEmitter from "eventemitter3";
+import {EventEmitter} from "eventemitter3";
 import * as IO from "socket.io-client";
 import { isArray, removeCommas, removeNonNumeric } from "./utils/helpers";
 import {
